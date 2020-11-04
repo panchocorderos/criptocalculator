@@ -1,26 +1,41 @@
-<div>
-    Ingresa la criptomoneda   &nbsp;
-    <select name="criptomoneda" id="criptomoneda">
-        <option selected disabled hidden>-Selecciona-</option>
-        <option value="BTC">Bitcoin</option>
-        <option value="ETH">Ethereum</option>
-        <option value="XRP">XRP</option>        
-    </select>
-    <br/>
-    <br/>
-    Ingresa la moneda &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <select name="moneda" id="moneda">
-        <option selected disabled hidden>-Selecciona-</option>
-        <option value="USD">Dolars Americanos</option>
-        <option value="EUR">Euros</option>
-        
-    </select>
-    <br/>
-    <br/>
-    <button  id="btnCalcular">Calcular</button>
-    <br/>
-    <br/>
-    <label id="res" class="res">AA</label>
-</div>
-<script src="app.js"></script>
-<link rel="stylesheet" href="css.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1947E5" />
+
+    <title>CryptoCalculator</title>
+    <meta name="description" content="Calculadora digital de criptomonedas" />
+
+    <link rel="preload" href="css.css" as="style" />
+    <link rel="stylesheet" href="css.css" />
+
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <main>
+        Ingresa la criptomoneda   &nbsp;
+        <select name="criptomoneda" id="criptomoneda">
+            <option selected disabled hidden>-Selecciona-</option>
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Ethereum</option>
+            <option value="XRP">XRP</option>        
+        </select>
+        <br/>
+        <br/>
+        Ingresa la moneda &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <select name="moneda" id="moneda">
+            <option selected disabled hidden>-Selecciona-</option>
+            <option value="USD">Dolars Americanos</option>
+            <option value="EUR">Euros</option>
+        </select>
+        <br/>
+        <br/>
+        <button  id="btnCalcular">Calcular</button>
+        <br/>
+        <br/>
+        <label id="res" class="res">AA</label>
+    </main>
+</body>
+</html>
