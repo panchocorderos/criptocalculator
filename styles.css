@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+}
+
+:root {
+    font-size: 16px;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: #4C68C4;
+    color: #FFF;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0;
+}
+
+button {
+    user-select: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** STYLES ***/
+
+
+.res{
+    opacity: 0; 
+}
