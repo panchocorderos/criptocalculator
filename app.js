@@ -6,12 +6,15 @@ const consumirApi = (criptoMoneda, moneda) => {
     .then((data) => {
       console.log(data);
       document.getElementById("res").style.opacity = "1";
-      document.getElementById("res").innerHTML = `<h2>El precio es:</h2> 
-      <p>${data.DISPLAY[criptoMoneda][moneda].PRICE}</p>
-      <p>Máximo del día: <span>${data.DISPLAY[criptoMoneda][moneda].HIGH24HOUR}</span></p> 
-      <p>Mínimo del día: <span>${data.DISPLAY[criptoMoneda][moneda].LOW24HOUR}</span></p> 
-      <p>Variación diaria: <span>% ${data.DISPLAY[criptoMoneda][moneda].CHANGEPCTDAY}</span></p>
-      <p>Última actualización: <span>${data.DISPLAY[criptoMoneda][moneda].LASTUPDATE}</span></p>
+      document.getElementById("res").innerHTML = `<div class="title-price">
+      <h2>${data.DISPLAY[criptoMoneda][moneda].PRICE}</h2>
+      <span class="symbol">${data.DISPLAY[criptoMoneda][moneda].FROMSYMBOL}</span> 
+      </div>
+      
+      <p>Máximo del día: <span class="data">${data.DISPLAY[criptoMoneda][moneda].HIGH24HOUR}</span></p> 
+      <p>Mínimo del día: <span class="data">${data.DISPLAY[criptoMoneda][moneda].LOW24HOUR}</span></p> 
+      <p>Variación diaria: <span class="data">${data.DISPLAY[criptoMoneda][moneda].CHANGEPCTDAY}%</span></p>
+      <p>Última actualización: <span class="data">${data.DISPLAY[criptoMoneda][moneda].LASTUPDATE}</span></p>
       `;
     })
     .catch((err) => {
