@@ -14,7 +14,7 @@ const consumirApi = (criptoMoneda, moneda) => {
       <p>Máximo del día: <span class="data">${data.DISPLAY[criptoMoneda][moneda].HIGH24HOUR}</span></p> 
       <p>Mínimo del día: <span class="data">${data.DISPLAY[criptoMoneda][moneda].LOW24HOUR}</span></p> 
       <p>Variación diaria: <span class="data">${data.DISPLAY[criptoMoneda][moneda].CHANGEPCTDAY}%</span></p>
-      <p>Última actualización: <span class="data">${data.DISPLAY[criptoMoneda][moneda].LASTUPDATE}</span></p>
+      <p>Última act: <span class="data">${data.DISPLAY[criptoMoneda][moneda].LASTUPDATE}</span></p>
       `;
     })
     .catch((err) => {
