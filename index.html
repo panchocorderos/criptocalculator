@@ -1,26 +1,43 @@
-<div>
-    Ingresa la criptomoneda   &nbsp;
-    <select name="criptomoneda" id="criptomoneda">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="">Ingrese su moneda</label>
+      <br />
+      <select name="moneda" id="moneda">
+        <option selected disabled hidden>-Selecciona-</option>
+        <option value="USD">Dólar Americano</option>
+        <option value="EUR">Euro</option>
+        <option value="ARS">Peso Argentino</option>
+        <option value="EUR">Peso Chileno</option>
+      </select>
+      <br />
+      <label for="">Elija una criptomoneda</label>
+      <br />
+      <select name="criptomoneda" id="criptomoneda">
         <option selected disabled hidden>-Selecciona-</option>
         <option value="BTC">Bitcoin</option>
         <option value="ETH">Ethereum</option>
-        <option value="XRP">XRP</option>        
-    </select>
-    <br/>
-    <br/>
-    Ingresa la moneda &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <select name="moneda" id="moneda">
-        <option selected disabled hidden>-Selecciona-</option>
-        <option value="USD">Dolars Americanos</option>
-        <option value="EUR">Euros</option>
-        
-    </select>
-    <br/>
-    <br/>
-    <button  id="btnCalcular">Calcular</button>
-    <br/>
-    <br/>
-    <label id="res" class="res">AA</label>
-</div>
-<script src="app.js"></script>
-<link rel="stylesheet" href="css.css">
+        <option value="XRP">XRP</option>
+        <option value="USDT">Tether</option>
+        <option value="LINK">Chainlink</option>
+        <option value="HMR">Homeros</option>
+        <option value="BCH">Bitcoin Cash</option>
+        <option value="TITAN">TitanSwap</option>
+        <option value="HEX">HEX</option>
+        <option value="CRO">Crypto.com Coin</option>
+      </select>
+      <br />
+      <button id="btnCalcular">Calcular</button>
+      <br />
+      <label id="res" class="res">AA</label>
+    </div>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css.css" />
+  </body>
+</html>
