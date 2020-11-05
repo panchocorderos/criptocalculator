@@ -22,8 +22,18 @@ const consumirApi = (criptoMoneda, moneda) => {
     });
 };
 
+function spinner() {
+  document.getElementById("spinner").style.visibility = "visible";
+  setTimeout(hidden, 1500);
+}
+
+function hidden() {
+  document.getElementById("spinner").style.visibility = "hidden";
+}
+
 document.querySelector("#btnCalcular").addEventListener("click", function () {
   let criptoMoneda = document.getElementById("criptomoneda").value;
   let moneda = document.getElementById("moneda").value;
-  consumirApi(criptoMoneda, moneda);
+  spinner()
+  setTimeout(consumirApi(criptoMoneda, moneda), 3000)
 });

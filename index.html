@@ -9,12 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinner.css" />
   </head>
   <body>
     <header>
       <img class="logo" src="/images/Frame.svg" alt="" />
       <h1>Crypto Calculator</h1>
     </header>
+    <div id="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
     <main>
       <div class="form">
         <label for="">Ingrese su moneda</label>
@@ -45,6 +50,7 @@
         <br />
       </div>
     </main>
+
     <div id="res" class="res"></div>
     <script src="app.js"></script>
   </body>
