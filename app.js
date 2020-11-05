@@ -34,6 +34,8 @@ function hidden() {
 document.querySelector("#btnCalcular").addEventListener("click", function () {
   let criptoMoneda = document.getElementById("criptomoneda").value;
   let moneda = document.getElementById("moneda").value;
-  setTimeout(consumirApi(criptoMoneda, moneda), 3000);
+  setTimeout(() => {
+    consumirApi(criptoMoneda, moneda);
+  }, 1000);
   spinner();
 });
