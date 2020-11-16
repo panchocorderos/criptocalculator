@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
 
 html {
-  background: url(/images/openpeeps/peep-09.svg), url(/images/bg.svg);
+  background: url(/images/peep-09.svg), url(/images/bg.svg);
   background-color: #1947e5;
   background-repeat: no-repeat;
   background-position: center 100px;
